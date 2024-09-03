@@ -21,4 +21,4 @@ def create_rag_chain(user_input):
     response = rag_chain.invoke(user_input)
     return response
 
-print(create_rag_chain("금리가 무엇인가요?"))
+# print(create_rag_chain("금리가 무엇인가요?")) --- test
