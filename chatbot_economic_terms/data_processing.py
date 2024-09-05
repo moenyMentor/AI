@@ -33,12 +33,12 @@ def save_to_txt_file(file_name, content):
 
 # PDF 로드 및 전처리
 def load_and_process_financial_data():
-    pdf_filename = os.path.join(os.getcwd(), 'data', '한국은행_경제금융용어.pdf')
-    financial_md_text = pymupdf4llm.to_markdown(pdf_filename)     # markdown 형식으로 pdf 읽기
-    clean_financial_md_text = preprocess_financial_text(financial_md_text)
+    # pdf_filename = os.path.join(os.getcwd(), 'data', '한국은행_경제금융용어.pdf')
+    # financial_md_text = pymupdf4llm.to_markdown(pdf_filename)     # markdown 형식으로 pdf 읽기
+    # clean_financial_md_text = preprocess_financial_text(financial_md_text)
     
-    # 문자열을 파일로 저장
-    save_to_txt_file('data/한국은행_경제금융용어.txt', clean_financial_md_text)
+    # # 문자열을 파일로 저장
+    # save_to_txt_file('data/한국은행_경제금융용어.txt', clean_financial_md_text)
 
     # txt 파일 불러오기
     txt_filename = os.path.join(os.getcwd(), 'data', '한국은행_경제금융용어.txt')
